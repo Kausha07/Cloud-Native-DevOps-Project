@@ -17,3 +17,9 @@ variable "common_tags" {
 variable "zone_name" {
   default = "eswarsaikumar.site"
 }
+
+variable "db_password" {
+  type        = string
+  description = "RDS master database password"
+  sensitive   = true
+}
